@@ -5,7 +5,7 @@ import { nhost } from './nhost'
 
 // 1️⃣ HTTP link to Hasura/Nhost GraphQL
 const httpLink = new HttpLink({
-  uri: 'https://pjuooljiaildtssrdgsn.hasura.app/v1/graphql', // replace with your GraphQL endpoint
+  uri: `https://${import.meta.env.VITE_NHOST_SUBDOMAIN}.nhost.run/v1/graphql`,
 })
 
 // 2️⃣ Auth link to automatically send JWT token

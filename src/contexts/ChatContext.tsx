@@ -59,7 +59,6 @@ interface ChatProviderProps {
 
 export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
   const userId = useUserId()
-  console.log(userId);
   const [currentChat, setCurrentChat] = useState<Chat | null>(null)
   const [isLoading, setIsLoading] = useState(false)
   const [localChats, setLocalChats] = useState<Chat[]>([])

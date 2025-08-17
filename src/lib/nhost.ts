@@ -6,7 +6,3 @@ export const nhost = new NhostClient({
   region: import.meta.env.VITE_NHOST_REGION,
 })
 
-// Debugging
-console.log('Nhost Subdomain:', import.meta.env.VITE_NHOST_SUBDOMAIN)
-console.log('Nhost Region:', import.meta.env.VITE_NHOST_REGION)
-console.log('getSession function:', nhost.auth.getSession)
