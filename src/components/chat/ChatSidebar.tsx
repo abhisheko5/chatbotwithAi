@@ -81,9 +81,7 @@ const ChatSidebar: React.FC<ChatSidebarProps> = ({ onClose }) => {
                     {chat.title}
                   </h3>
                 </div>
-                <p className="text-xs text-gray-400">
-                  {formatDate(chat.updatedAt)} • {chat.messages_aggregate?.aggregate?.count || 0} messages
-                </p>
+                
               </div>
               <button
                 onClick={(e) => {
